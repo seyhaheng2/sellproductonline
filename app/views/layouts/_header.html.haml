@@ -1,0 +1,19 @@
+%nav.top-bar{"data-topbar" => "", :role => "navigation"}
+  %ul.title-area
+    %li.name
+      %h1
+        -# %a{:href => "#"} My Site
+    %li.toggle-topbar.menu-icon
+      %a{:href => "#"}
+        %span Menu
+  %section.top-bar-section
+    / Right Nav Section
+    %ul.right
+      %li.active
+        = link_to "Login", new_user_session_path
+      %li
+        = link_to "Register", new_user_registration_path
+    / Left Nav Section
+    %ul.left
+      %li
+        -# %a{:href => "#"} Left Nav Button
